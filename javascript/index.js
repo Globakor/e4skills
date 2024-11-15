@@ -123,28 +123,28 @@
 
 // //   greeting(); 
 
- function calculateArea(width, height) {
-   console.log(width * height);
- }
+//  function calculateArea(width, height) {
+//    console.log(width * height);
+//  }
 
- calculateArea(20, 35) 
+//  calculateArea(20, 35) 
 
-// Assignment 
-const books = [
-    { title: "To Kill a Mockingbird", author: "Harper Lee", yearPublished: 1960 },
-    { title: "1984", author: "George Orwell", yearPublished: 1949 },
-    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", yearPublished: 1925 }
-  ];
+// // Assignment 
+// const books = [
+//     { title: "To Kill a Mockingbird", author: "Harper Lee", yearPublished: 1960 },
+//     { title: "1984", author: "George Orwell", yearPublished: 1949 },
+//     { title: "The Great Gatsby", author: "F. Scott Fitzgerald", yearPublished: 1925 }
+//   ];
 
-  function addBook(newBook) {
-    books.push(newBook);
-  }
+//   function addBook(newBook) {
+//     books.push(newBook);
+//   }
   
-// Adding new books
-addBook({ title: "Pride and Prejudice", author: "Jane Austen", yearPublished: 1813 });
-addBook({ title: "Moby Dick", author: "Herman Melville", yearPublished: 1851 });
-
- console.log(books);
+// // Adding new books
+// addBook({ title: "Pride and Prejudice", author: "Jane Austen", yearPublished: 1813 });
+// addBook({ title: "Moby Dick", author: "Herman Melville", yearPublished: 1851 });
+ 
+//  console.log(books);
 
 
 
@@ -179,3 +179,60 @@ addBook({ title: "Moby Dick", author: "Herman Melville", yearPublished: 1851 });
 
 // const Gloria = document.getElementsByClassName('form-group');
 // console.log(Gloria);
+
+const title = document.getElementById('signupForm');
+console.log(title);
+
+const password = document.getElementsByClassName('form-group');
+console.log(password);
+
+const email = document.getElementsByTagName('div');
+console.log(email);
+
+
+// Create a new paragraph element
+//const paragraph = document.createElement("p");
+
+// Insert the name into the paragraph
+//paragraph.textContent = "Gloria Badu korkor";
+
+// Append the paragraph to the body of the document
+//document.body.appendChild(paragraph);
+
+
+// const paragraph = document.createElement('p');
+// paragraph.textContext = "Gloria Badu Korkor" ;
+
+//const parentElement = document.getElementById("parent");
+//parentElement.appendChild(paragraph);
+
+// const referenceElement = document.getElementById("reference");
+// parentElement.insertBefore(paragraph, referenceElement);
+
+
+// Create a new paragraph element
+// const paragraph = document.createElement("p");
+
+// // Insert the name into the paragraph
+// //paragraph.textContent = "Gloria Badu KorKor"; 
+
+// // Create a new h2 element
+// const heading = document.createElement("h2");
+
+// // Insert the same name into the h2 element
+// heading.textContent = "Gloria Badu KorKor"; 
+
+// // Append both elements to the document body
+// document.body.appendChild(heading);
+// document.body.appendChild(paragraph);
+
+// Set the name you want to display
+const name = "Gloria Badu Korkor"; 
+// Create a new h2 element
+const heading = document.createElement("h2");
+
+// Insert the name into the h2 element
+heading.textContent ="Gloria Badu Korkor";
+
+// Find the placeholder div and insert the h2 into it
+document.getElementById("signupForm").appendChild(heading);
